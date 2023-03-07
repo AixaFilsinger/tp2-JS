@@ -1,11 +1,14 @@
 let nota = parseInt(prompt("Ingrese una nota entre 0 a 10"));
 
+
 if (isNaN(nota))
 {
   alert("por favor ingrese un número entre 0 y 10");
 } 
 else {
-    switch (nota) {
+  if(nota >= 0 && nota <= 10)
+  {
+     switch (nota) {
         case 0:
         case 1:
         case 2:
@@ -32,5 +35,11 @@ else {
           default:
               document.write('Seleccionaste una opcion erronea');
       }
+  } 
+  else 
+  {
+    alert("Ingrese un numero dentro del rango de 0 a 10");
+  }
+   
 
 }
