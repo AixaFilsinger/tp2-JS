@@ -1,5 +1,5 @@
-var i;
-var j = 500;
+let i;
+let j = 500;
 
 for (i = 1; i <= j; i++) {
     
